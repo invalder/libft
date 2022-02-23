@@ -6,7 +6,7 @@
 /*   By: nnakarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 15:54:31 by nnakarac          #+#    #+#             */
-/*   Updated: 2022/02/24 00:35:31 by nnakarac         ###   ########.fr       */
+/*   Updated: 2022/02/24 00:38:39 by nnakarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,16 +90,12 @@ char	**ft_split(char const *s, char c)
 	char	*ptr_s;
 
 	ptr_s = (char *) s;
-	if (*ptr_s && *ptr_s != c)
-	{
-		arr_cnt = ft_arrcnt(ptr_s, c);
-		ret = malloc(sizeof(char *) * (arr_cnt + 1));
-		ret[arr_cnt] = NULL;
-		if (!ret)
-			return (NULL);
-		if (ft_add_array(ret, ptr_s, arr_cnt, c))
-			return (ret);
+	arr_cnt = ft_arrcnt(ptr_s, c);
+	ret = malloc(sizeof(char *) * (arr_cnt + 1));
+	ret[arr_cnt] = NULL;
+	if (!ret)
 		return (NULL);
-	}
+	if (ft_add_array(ret, ptr_s, arr_cnt, c))
+		return (ret);
 	return (NULL);
 }
