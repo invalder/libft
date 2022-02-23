@@ -1,36 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nnakarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/16 14:39:24 by nnakarac          #+#    #+#             */
-/*   Updated: 2022/02/22 22:46:07 by nnakarac         ###   ########.fr       */
+/*   Created: 2022/02/23 19:41:39 by nnakarac          #+#    #+#             */
+/*   Updated: 2022/02/23 23:30:18 by nnakarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c);
+t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-char	*ft_strchr(const char *s, int c)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	char	*ps;
+	t_list	*p_lst;
+	t_list	*p_lst_new;
 
-	if (!*s && !c)
-		return ((char *)s);
-	if (*s)
+	p_lst_new = NULL;
+	while (lst != NULL)
 	{
-		ps = (char *)s;
-		while (*ps)
-		{
-			if (*ps == (char)c)
-				return (ps);
-			ps++;
-		}
-		if (c == 0)
-			return (ps);
+		p_lst = ft_lstnew(f(lst->content));
+		if (p_lst == NULL)
+			ft_lstclear(&p_lst_new, del);
+		ft_lstadd_back(&p_lst_new, p_lst);
+		lst = lst->next;
 	}
-	return (NULL);
+	return (p_lst_new);
 }
