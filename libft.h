@@ -6,7 +6,7 @@
 /*   By: nnakarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 09:44:15 by nnakarac          #+#    #+#             */
-/*   Updated: 2022/02/23 22:29:56 by nnakarac         ###   ########.fr       */
+/*   Updated: 2022/02/23 23:47:16 by nnakarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 # include <string.h>
 # include <stdio.h>
 # include <unistd.h>
-
-// Mandatory Part
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -56,7 +54,6 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
-// Bonus Part
 typedef struct s_list
 {
 	void			*content;
