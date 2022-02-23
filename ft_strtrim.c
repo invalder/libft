@@ -6,7 +6,7 @@
 /*   By: nnakarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 02:46:45 by nnakarac          #+#    #+#             */
-/*   Updated: 2022/02/22 16:10:58 by nnakarac         ###   ########.fr       */
+/*   Updated: 2022/02/23 23:50:41 by nnakarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,19 +86,3 @@ static int	set_check(char s1, char const *set)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	// const char	str[20] = "===Hello***";
-	// // const char	str[20] = "!!!!!!!!!!!";
-	// const char	search[20] = "!123+";
-
-	// ft_strtrim(str, search);
-	char	set [] = "\t \n";
-	char s1[] = "          ";
-	char * ret = ft_strtrim(s1, set);
-	printf("ret addr: %p\n", ret);
-	printf("ret: %s\n", ret);
-	printf("ret len: %lu\n", ft_strlen(ret));
-}
-*/

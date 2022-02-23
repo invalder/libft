@@ -6,7 +6,7 @@
 /*   By: nnakarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 15:46:33 by nnakarac          #+#    #+#             */
-/*   Updated: 2022/02/22 16:09:50 by nnakarac         ###   ########.fr       */
+/*   Updated: 2022/02/23 23:48:41 by nnakarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-/*
-int main(void)
-{
-	char	str1[11] = "0123456789";
-	char	str2[11] = "!!!!!!!!!!";
-
-	printf("%p\n", ft_memchr(str1, '0', 5));
-	printf("%p\n", ft_memchr(str1, 'a', 10));
-	printf("%p\n", ft_memchr(str2, '!', 5));
-}
-*/

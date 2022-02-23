@@ -6,19 +6,11 @@
 /*   By: nnakarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 01:21:11 by nnakarac          #+#    #+#             */
-/*   Updated: 2022/02/22 16:10:32 by nnakarac         ###   ########.fr       */
+/*   Updated: 2022/02/23 23:50:17 by nnakarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
- * Appends src to string dst of size siz (unlike strncat, siz is the
- * full size of dst, not space left).  At most siz-1 characters
- * will be copied.  Always NUL terminates (unless siz <= strlen(dst)).
- * Returns strlen(initial dst) + strlen(src); if retval >= siz,
- * truncation occurred.
- */
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 

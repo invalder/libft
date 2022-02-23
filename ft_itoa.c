@@ -6,7 +6,7 @@
 /*   By: nnakarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 04:15:10 by nnakarac          #+#    #+#             */
-/*   Updated: 2022/02/22 16:25:04 by nnakarac         ###   ########.fr       */
+/*   Updated: 2022/02/23 23:48:10 by nnakarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,9 +71,3 @@ char	*ft_itoa(int n)
 	insert_num(n, sign, len, str);
 	return (str);
 }
-/*
-int	main(void)
-{
-	ft_itoa(-1234567890);
-}
-*/

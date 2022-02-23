@@ -6,28 +6,13 @@
 /*   By: nnakarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 15:54:31 by nnakarac          #+#    #+#             */
-/*   Updated: 2022/02/22 16:10:17 by nnakarac         ###   ########.fr       */
+/*   Updated: 2022/02/23 23:49:56 by nnakarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char	**ft_split(char const *s, char c);
-
-/*
-
-s: The string to be split.
-c: The delimiter character.
-
-The array of new strings resulting from the split.
-NULL if the allocation fails.
-
-Allocates (with malloc(3)) and returns an array
-of strings obtained by splitting ’s’ using the
-character ’c’ as a delimiter. The array must end
-with a NULL pointer.
-
-*/
 
 static int	ft_is_sep(char c, char sep)
 {

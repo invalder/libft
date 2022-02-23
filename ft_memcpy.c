@@ -6,16 +6,11 @@
 /*   By: nnakarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 11:23:18 by nnakarac          #+#    #+#             */
-/*   Updated: 2022/02/22 16:10:01 by nnakarac         ###   ########.fr       */
+/*   Updated: 2022/02/23 23:49:04 by nnakarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-	Note:
-	- to check if n > size of src or dest should be considered or not
-*/
 
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 
@@ -37,14 +32,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 			*ptr_d++ = *ptr_s++;
 	return (dest);
 }
-
-/*
-int	main(void)
-{
-	char	str1[11] = "0123456789";
-	char	str2[11] = "!!!!!!!!!!";
-
-	ft_memcpy(str2 + 5, str1, 5);
-	printf("%s\n", str2);
-}
-*/

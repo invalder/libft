@@ -6,7 +6,7 @@
 /*   By: nnakarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 16:29:22 by nnakarac          #+#    #+#             */
-/*   Updated: 2022/02/22 16:09:57 by nnakarac         ###   ########.fr       */
+/*   Updated: 2022/02/23 23:48:53 by nnakarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/*
-int main(void)
-{
-	char str1[12] = "Hello World";
-	char str2[12] = "Hello New";
-	char str3[12] = "Hello Old";
-
-	printf("%d\n", memcmp(str1, str2, (size_t) 11));
-	printf("%d\n", ft_memcmp(str1, str2, (size_t) 11));
-
-	return (0);
-}
-*/

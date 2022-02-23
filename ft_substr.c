@@ -6,25 +6,13 @@
 /*   By: nnakarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 20:27:58 by nnakarac          #+#    #+#             */
-/*   Updated: 2022/02/22 16:11:04 by nnakarac         ###   ########.fr       */
+/*   Updated: 2022/02/23 23:50:48 by nnakarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-
-/*
-Params:
-s: The string from which to create the substring.
-start: The start index of the substring in the
-string ’s’.
-len: The maximum length of the substring.
-
-Ret:
-The substring.
-NULL if the allocation fails.
-*/
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
